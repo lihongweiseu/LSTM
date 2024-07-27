@@ -1,4 +1,4 @@
-# Codes for the paper "A hybrid structural modeling approach leveraging long short-term memory neural network model and physical model"
+# Codes for the paper "Dynamic modeling and substructuring analysis leveraging long short-term memory neural network model"
 ---  Coded in the MATLAB Simulink environment and Python environment utilizing the powerful deep learning library PyTorch.
 ## Numerical examples
 ### Numerical examples in Section 2 (device modeling)
@@ -21,11 +21,3 @@
 8. _Base_isolated_structure_infor.m_ and _Base_isolated_structure_plan.m_ are MATLAB code files to generate the structural parameters and base information for the based-isolated structure.
 9. _Base_isolated_structure_refence.slx_ is the Simulink model to calculate the reference responses of the based-isolated structure.
 10. _Base_isolated_structure_LSTM.slx_ is the Simulink model to calculate the LSTM-based prediction responses of the based-isolated structure.
-
-## Experimental examples (MR damper modeling)
-1. _MR_training_data_prep.m_ is the MATLAB code file to generate the training-testing data.
-2. _MR_training_data.mat_ is the training data saved using the MATLAB code file _MR_training_data_prep.m_.
-3. _MR_training.py_ is the Python code file to train LSTM models to fit the experimental data of the MR damper.
-4. _MR_trained_model.pt_ is the saved model to fit the experimental data of the MR damper after training 10,000 times.
-5. _MR.onnx_ is the ONNX model of _MR_trained_model.pt_.
-6. _MR_compare.m_ is the MATLAB code file to compare the LSTM model with the Narx model.
